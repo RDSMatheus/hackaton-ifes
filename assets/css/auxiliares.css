@@ -1,0 +1,32 @@
+.container{
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.grid-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.btn{
+  display: inline-block;
+  max-width: max-content;
+  background-color: #1A7FBA;
+  color: #fff;
+  padding: .2rem 1rem;
+}
+.titulo{
+  font-size: 3rem;
+  position: relative;
+  margin-bottom: 20px;
+}
+.titulo::before{
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #C27FB1;
+  display: block;
+  position: absolute;
+  bottom: -10px;
+
+}
