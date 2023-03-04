@@ -1,5 +1,8 @@
-@import "./geral.css";
-@import "./header.css";
-@import "./auxiliares.css";
-@import "./noticias.css";
-@import "./cores.css";
+@import "./geral/geral.css";
+@import "./geral/header.css";
+@import "./geral/noticias.css";
+@import "./geral/introducao.css";
+@import "./geral/informacoes.css";
+@import "./geral/grade.css";
+@import "./auxiliares/auxiliares.css";
+@import "./auxiliares/cores.css";

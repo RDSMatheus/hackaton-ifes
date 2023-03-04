@@ -18,7 +18,7 @@
   height: 2px;
   width: 0;
   display: block;
-  background-color: #C27FB1;
+  background-color: var(--cor-obrigatoria-3);
   margin-top: 5px;
 }
 .menu a:hover::after{
