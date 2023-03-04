@@ -1,0 +1,39 @@
+.btn-faq {
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  cursor: pointer;
+  background-color: #f2faff;
+}
+.btn-faq::after {
+  content: url("../../img/arrow-down-svgrepo-com.svg");
+}
+.ativo button::after{
+  rotate: 180deg;
+  transition: .3s;
+}
+.faq dd {
+  display: none;
+  background-color: #D768BF;
+  padding: 20px;
+  border-radius: 4px;
+}
+dd.ativo {
+  display: block;
+  animation: slidedown 0.3s forwards;
+}
+
+@keyframes slidedown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

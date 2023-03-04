@@ -35,6 +35,7 @@
   font-size: 3rem;
   position: relative;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 
@@ -52,4 +53,13 @@
 }
 .font-m {
   font: 400 1.2rem/1.3 "Roboto", sans-serif;
+}
+.font-l-b{
+  font: 700 1.6rem/1.3 "Roboto", sans-serif;
+}
+
+/* row */
+
+.row{
+  grid-column: 1/-1;
 }

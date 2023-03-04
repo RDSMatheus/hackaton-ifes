@@ -22,12 +22,15 @@
   <header class="header container mb-1">
     <div class="logo"><img src="./assets/img/logo-reprogramese/preferencial-horizontal.png"
         alt="Logo"></div>
-    <nav aria-label="primaria"
-      class="menu">
-      <ul>
-        <li><a href="">Inscreva-se</a></li>
-        <li><a href="">Contato</a></li>
-        <li><a href="">Mais</a>
+    <nav aria-label="primaria">
+      <ul class="menu">
+        <li><a href=""
+            class="menu-link">Inscreva-se</a></li>
+        <li><a href=""
+            class="menu-link">Contato</a></li>
+        <li><a href=""
+            class="menu-link"
+            data-dropdown="abrir">Mais</a>
           <ul class="dropdown-menu">
             <li>
               <a href="">FAQ</a>
@@ -40,8 +43,10 @@
             </li>
           </ul>
         </li>
-        <li><a href="">Calendario</a></li>
-        <li><a href="">Depoimentos</a></li>
+        <li><a href=""
+            class="menu-link">Calendario</a></li>
+        <li><a href=""
+            class="menu-link">Depoimentos</a></li>
       </ul>
     </nav>
   </header>
@@ -68,50 +73,95 @@
     </div>
   </section>
   <section class="grade container">
-    <h2 class="titulo">Grade</h2>
-    <div>
-      <h3>FIC 1 - Programação básica de aplicativos Web - Front-end</h3>
-      <ul>
-        <li>Conhecimentos
-          básicos de HTML e
-          CSS</li>
-        <li>Introdução ao
-          framework Bootstrap</li>
-        <li>Programação
-          estruturada com
-          JavaScript</li>
-        <li>Desenvolvimento web
-          com HTML, CSS e
-          JavaScript</li>
-      </ul>
+    <h2 class="titulo row">Grade</h2>
+    <div class="grade-container">
+      <div>
+        <h3>FIC 1 - Front-end</h3>
+        <ul>
+          <li>Conhecimentos
+            básicos de HTML e
+            CSS.</li>
+          <li>Introdução ao
+            framework Bootstrap</li>
+          <li>Programação
+            estruturada com
+            JavaScript.</li>
+          <li>Desenvolvimento web
+            com HTML, CSS e
+            JavaScript.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>FIC 2- Back-end</h3>
+        <ul>
+          <li>Introdução ao framework
+            Node.js e notação
+            Javascript.</li>
+          <li>Criação de páginas
+            customizadas com Node.js.</li>
+          <li>Persistência de dados com
+            Sequelize.</li>
+          <li>Node.js intermediário, CRUD
+            com Sequelize, cookies e
+            sessões.</li>
+        </ul>
+      </div>
     </div>
   </section>
   <section aria-label="Notícias"
     class="container mb-2">
     <h2 class="titulo">Notícias</h2>
-    <ul class="gallery">
-      <li style="background: #f6bd60;"></li>
-      <li style="background: #f7ede2;"></li>
-      <li style="background: #f5cac3;"></li>
-      <li style="background: #84a59d;"></li>
-      <li style="background: #f28482;"></li>
+    <ul class="galeria">
+      <li class="galeria-item">
+        <div>
+          <img src="./assets/img/image-retro-pcs.jpg"
+            alt="PC retro">
+        </div>
+        <div>
+          <span class="cor-">01</span>
+          <h3 class="titulo"><a href="">Revivendo PCs</a></h3>
+          <p class="font-m">O que acontece quando você dá upgrades modernos no seu pc velho?</p>
+        </div>
+      </li>
+      <li class="galeria-item">
+        <div>
+          <img src="./assets/img/image-top-laptops.jpg"
+            alt="Laptop">
+        </div>
+        <div>
+          <span class="cor-2 font-xl">02</span>
+          <h3 class="titulo"><a href="">Top 10 Laptops de 2022</a></h3>
+          <p class="font-m">Nossas melhores escolhas para diferentes gostos e orçamentos.</p>
+        </div>
+      </li>
+      <li class="galeria-item">
+        <div>
+          <img src="./assets/img/image-gaming-growth.jpg"
+            alt="Joystick">
+        </div>
+        <div>
+          <span class="cor-2 font-xl">03</span>
+          <h3 class="titulo"><a href="">Industria dos games.</a></h3>
+          <p class="font-m">Como a pandemia aumentou a popularidade dos games.</p>
+        </div>
+      </li>
     </ul>
   </section>
 
 
   <section aria-label="Faq"
-    class="container">
+    class="container faq">
     <h2 class="titulo">Perguntas frequentes</h2>
     <dl>
-      <dt class="font-1-b">Quais são os cursos de projeto reprograme-se?</dt>
+      <dt data-accordion><button class="btn-faq font-m-b">Quais são os cursos de projeto reprograme-se?</button></dt>
       <dd>O reprograme-se é composto por dois cursos: o curso Programação básica de aplicativos
         Web - Front-end e o curso Programação com JavaScript e o Framework Node.js - Backend (confira o link da estrutura do curso).</dd>
 
-      <dt class="font-1-b">Quanto tempo eu tenho para finalizar os cursos do projeto reprograme-se?</dt>
+      <dt data-accordion><button class="btn-faq font-m-b">Quanto tempo eu tenho para finalizar os cursos do projeto reprograme-se?</button></dt>
       <dd>O reprograme-se terá a duração de 8 meses, sendo 4 meses para o curso Programação
         básica de aplicativos Web - Front-end e 4 meses para o curso Programação com
         JavaScript e o Framework Node.js - Back-end.</dd>
-      <dt class="font-1-b">Tenho que pagar inscrição?</dt>
+      <dt data-accordion><button class="btn-faq font-m-b">Tenho que pagar inscrição?</button></dt>
       <dd>Não, o curso é totalmente gratuito.</dd>
     </dl>
   </section>
@@ -137,7 +187,8 @@
     </div>
   </section>
 
-  <script src="./assets/js/script.js"></script>
+  <script type="module"
+    src="./assets/js/script.js"></script>
 </body>
 
 </html>
