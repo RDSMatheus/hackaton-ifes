@@ -17,12 +17,23 @@ export default function initDarkTheme() {
   }
 
   function changeImg(valor) {
-    const img = btnTheme.querySelector("img");
-    console.log(img);
+    const imgBtn = btnTheme.querySelector("img");
+    const imgIFES = document.querySelector("#ifes");
+    const imgACTION = document.querySelector("#action");
     if (valor) {
-      img.src = "./assets/img/dark-mode-night-moon-svgrepo-com.svg";
+      imgBtn.src = "./assets/img/dark-mode-night-moon-svgrepo-com.svg";
+
+      imgIFES.src = "./assets/img/logo-ifes/ifes-horizontal-pb.png";
+
+      imgACTION.src = "./assets/img/logo-action/horizontal-positiva.png";
+
     } else {
-      img.src = "./assets/img/light-mode-svgrepo-com.svg";
+      imgBtn.src = "./assets/img/light-mode-svgrepo-com.svg";
+
+      imgIFES.src = "./assets/img/logo-ifes/ifes-horizontal-branco.png";
+      
+      imgACTION.src = "./assets/img/logo-action/horizontal-negativa.png"
+      
     }
   }
 

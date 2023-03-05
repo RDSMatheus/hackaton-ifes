@@ -28,41 +28,50 @@
         data-menu="abrir"><img src="./assets/img/hamburger-menu-mobile-svgrepo-com.svg"
           alt=""></button>
       <ul class="menu cor-3">
-        <li><a href=""
+        <li><a href="#introducao"
             class="menu-link">Inscreva-se</a></li>
-        <li><a href=""
+        <li><a href="#contato"
             class="menu-link">Contato</a></li>
         </li>
-        <li><a href=""
+        <li><a href="#calendario"
             class="menu-link">Calendario</a></li>
-        <li><a href=""
+        <li><a href="#depoimentos"
             class="menu-link">Depoimentos</a></li>
         <li data-dropdown="abrir"><a href=""
             class="menu-link">Mais</a>
           <ul class="dropdown-menu">
             <li>
-              <a href="">FAQ</a>
+              <a href="#faq">FAQ</a>
             </li>
             <li>
-              <a href="">Noticias</a>
+              <a href="#noticias">Noticias</a>
             </li>
             <li>
-              <a href="">Informações</a>
+              <a href="#informacoes">Informações</a>
             </li>
           </ul>
       </ul>
     </nav>
   </header>
-  <main class="introducao-bg mb-2">
+
+  <main data-scroll-suave
+    class="introducao-bg mb-2"
+    id="introducao">
     <div class="container introducao cor-0">
-      <h1 class="titulo mb-1">Aprenda a Programar de graça!</h1>
-      <p class="font-m">Aprenda a programar do 0.</p>
-      <p class="font-m mb-1">Back-end e Front-end em apenas 8 meses, 100% EAD</p>
-      <a href=""
-        class="btn font-m-b">Inscreva-se</a>
+      <h1 data-anime="500"
+        class="titulo mb-1 fadeInDown">Aprenda a Programar de graça!</h1>
+      <p data-anime="1000"
+        class="font-m fadeInLeft">Aprenda a programar do 0.</p>
+      <p data-anime="1250"
+        class="font-m mb-1 fadeInRight">Back-end e Front-end em apenas 8 meses, 100% EAD</p>
+      <a data-anime="1500"
+        href=""
+        class="btn font-m-b fadeInUp">Inscreva-se</a>
     </div>
   </main>
-  <section class="apresentacao-bg mb-2 cor-0">
+
+  <section data-scroll-suave
+    class="apresentacao-bg mb-2 cor-0">
     <div class="apresentacao container grid-section">
       <div><img src="./assets/img/coding.jpeg"
           alt=""></div>
@@ -76,7 +85,9 @@
     </div>
   </section>
 
-  <section class="grade mb-2 container">
+  <section data-scroll-suave
+    class="grade mb-2 container"
+    id="grade">
     <h2 class="titulo cor-3 row">Grade</h2>
     <div class="grade-container cor-0">
       <div>
@@ -113,7 +124,9 @@
     </div>
   </section>
 
-  <section aria-label="Notícias"
+  <section data-scroll-suave
+    aria-label="Notícias"
+    id="noticias"
     class="container mb-2 cor-3">
     <h2 class="titulo">Notícias</h2>
     <ul class="galeria">
@@ -151,7 +164,9 @@
   </section>
 
 
-  <section aria-label="Faq"
+  <section data-scroll-suave
+    aria-label="Faq"
+    id="faq"
     class="container faq mb-2 cor-3">
     <h2 class="titulo">Perguntas frequentes</h2>
     <dl>
@@ -168,7 +183,9 @@
     </dl>
   </section>
 
-  <article class="container mb-2 cor-3 informacoes">
+  <article data-scroll-suave
+    class="container mb-2 cor-3 informacoes"
+    id="informacoes">
     <h2 class="titulo row">Informações</h2>
     <div class="informacoes-wrapper mb-1">
       <div>
@@ -185,7 +202,10 @@
     <a href=""
       class="btn">Inscreva-se</a>
   </article>
-  <section aria-label="Calendário"
+
+  <section data-scroll-suave
+    aria-label="Calendário"
+    id="calendario"
     class="calendario-bg mb-2">
     <h2 class="titulo cor-0">Calendário</h2>
     <div class="calendario">
@@ -210,7 +230,9 @@
     </div>
   </section>
 
-  <section aria-label="Depoimentos"
+  <section data-scroll-suave
+    aria-label="Depoimentos"
+    id="depoimentos"
     class="container mb-2 cor-3 depoimentos">
     <h2 class="titulo row">Depoimentos</h2>
     <div class="depoimentos-wrap">
@@ -219,24 +241,86 @@
         <div><img src="./assets/img/mario-pfp.jpg"
             alt="Mario profile pic"></div>
         <p class="mb-1 depoimento-titulo">Super Mario</p>
-        <p>"Mamma mia, pessoal! Fiz um curso de desenvolvimento front-end e agora sou um verdadeiro herói. Aprendi HTML, CSS e JavaScript para criar sites incríveis para a princesa Peach. Os professores foram incríveis e tornaram o aprendizado fácil e divertido. Recomendo fortemente este curso para quem deseja se tornar um desenvolvedor front-end!"</p>
+        <p>"Mamma mia, pessoal! Participei do projeto Reprograme-se e agora sou um verdadeiro herói. Aprendi HTML, CSS e JavaScript para criar sites incríveis para a princesa Peach. Os professores foram incríveis e tornaram o aprendizado fácil e divertido. Recomendo fortemente este curso para quem deseja se tornar um desenvolvedor front-end!"</p>
       </div>
       <div class="depoimentos-item">
         <div><img src="./assets/img/spiderman-pfp.jpg"></div>
         <p class="mb-1 depoimento-titulo">Homem Aranha</p>
-        <p>"Como o Homem-Aranha, eu precisei aprimorar minhas habilidades em desenvolvimento web. Fiz um curso incrível e aprendi HTML, CSS, JavaScript e muito mais. Os professores foram ótimos e agora posso criar um site incrível para o meu alter-ego, Peter Parker. Se você quer aprender a criar sites incríveis, recomendo este curso com grandes responsabilidades!"</p>
+        <p>"Como o Homem-Aranha, eu precisei aprimorar minhas habilidades em desenvolvimento web. Graças ao projeto Reprograme-se aprendi HTML, CSS, JavaScript e muito mais. Os professores foram ótimos e agora posso criar um site incrível para o meu alter-ego, Peter Parker. Se você quer aprender a criar sites incríveis, recomendo este curso com grandes responsabilidades!"</p>
       </div>
       <div class="depoimentos-item">
         <div><img src="./assets/img/naruto-pfp.png"
             alt="Mario profile pic"></div>
         <p class="mb-1 depoimento-titulo">Naruto Uzumaki</p>
-        <p>"Oi pessoal, sou o Naruto Uzumaki e fiz um curso de Node.js que foi incrível! Aprendi muito sobre essa tecnologia e agora posso criar aplicativos web ainda mais poderosos. Os professores foram excelentes e tornaram o aprendizado fácil e divertido. Recomendo muito este curso para quem quer aprimorar suas habilidades em Node.js! Tô certo!"</p>
+        <p>"Oi pessoal, sou o Naruto Uzumaki e gostei muito do curso de Node.js do Reprograme-se que foi incrível! Aprendi muito sobre essa tecnologia e agora posso criar aplicativos web ainda mais poderosos. Os professores foram excelentes e tornaram o aprendizado fácil e divertido. Recomendo muito este curso para quem quer aprimorar suas habilidades em Node.js! Tô certo!"</p>
       </div>
     </div>
   </section>
+
+  <section class="contato-bg "
+    id="#contato">
+    <div class="contato container">
+      <h2 class="titulo cor-0">Contato</h2>
+      <form action="mailto:
+    contato@reprograme-se.org.br"
+        method="GET"
+        class="cor-0">
+        <label for="name">Nome Completo</label>
+        <input id="name"
+          name="subject"
+          type="text"
+          class="mb-1"
+          required
+          placeholder="Fulano de Tal" />
+        <label for="name">Email</label>
+        <input id="name"
+          name="subject"
+          type="email"
+          class="mb-1"
+          required
+          placeholder="email@email.com" />
+        <label for="msg">Mensagem</label>
+        <textarea name="body"
+          id="msg"
+          class="mb-1"
+          required></textarea>
+        <button class="cor-0">Enviar</button>
+      </form>
+    </div>
+
+  </section>
+
+
+  <footer class="footer-bg">
+    <div class="footer container cor-3">
+      <h2 class="titulo row">Realização</h2>
+      <div class="img">
+        <div><img id="ifes"
+            src="./assets/img/logo-ifes/ifes-horizontal-pb.png"
+            alt="Logo IFES"></div>
+        <div><img id="action"
+            src="./assets/img/logo-action/horizontal-positiva.png"
+            alt="Logo ACT!ON"></div>
+      </div>
+      <div>
+        <p class="font-m-b">sobre o IFES</p>
+        <p>O Ifes é uma instituição de referência em educação na sociedade capixaba, que promove educação profissional pública de excelência, integrando ensino, pesquisa e extensão. Foi criado a partir da união das unidades do Centro Federal de Educação Tecnológica e das Escolas Agrotécnicas Federais em 2008, com o objetivo de construir uma sociedade democrática, justa e sustentável.</p>
+      </div>
+      <div>
+        <p class="font-m-b">sobre a ACT!ON</p>
+        <p>O Ifes é uma instituição de referência em educação na sociedade capixaba, que promove educação profissional pública de excelência, integrando ensino, pesquisa e extensão. Foi criado a partir da união das unidades do Centro Federal de Educação Tecnológica e das Escolas Agrotécnicas Federais em 2008, com o objetivo de construir uma sociedade democrática, justa e sustentável.</p>
+      </div>
+    </div>
+  </footer>
+
+
   <button data-toggle-theme
     class="mudar-tema"><img src="./assets/img/dark-mode-night-moon-svgrepo-com.svg"
       alt=""></button>
+  <button data-toggle-fonte
+    class="mudar-fonte"><img src="./assets/img/font-increase-svgrepo-com.svg"
+      alt=""></button>
+  <script src="./assets/js/plugins/simple-anime.js"></script>
   <script type="module"
     src="./assets/js/script.js"></script>
 </body>

@@ -11,5 +11,8 @@
 @import "./geral/dropdown-menu.css";
 @import "./geral/acessibilidade.css";
 @import "./geral/depoimentos.css";
+@import "./geral/contato.css";
+@import "./geral/footer.css";
 @import "./auxiliares/auxiliares.css";
 @import "./auxiliares/cores.css";
+@import "./simple-anime/simple-anime.css";

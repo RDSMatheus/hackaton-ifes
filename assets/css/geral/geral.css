@@ -18,3 +18,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+label{
+  display: block;
+}
+input{
+  display: block;
+}
