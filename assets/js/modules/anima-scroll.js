@@ -8,6 +8,8 @@ export default function initAnimaScroll() {
       const visibleScroll = sectionDistancia.top - distanciaWindow < 0;
       if (visibleScroll) {
         section.classList.add("ativo");
+      } else if (section.classList.contains("ativo")) {
+        section.classList.remove("ativo");
       }
     });
   }

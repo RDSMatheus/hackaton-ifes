@@ -1,0 +1,2 @@
+#Objetivo
+O desenvolvimento buscou atender de maneira funcional o tema proposto, layout e design confeccionados da forma mais simples para, dentro do tempo disposto, atender a proposta e utilizar o máximo de ferramentas estudadas no Reprograme-se. Dessa forma evitando, na medida do possível, o uso de ferramentas ainda não abordadas na grade de aprendizado. Buscamos no tempo disposto fazer uma base funcional de uma página que atenda o solicitado.
