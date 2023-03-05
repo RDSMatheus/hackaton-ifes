@@ -1,17 +1,19 @@
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.logo{
+.logo {
   max-width: 200px;
 }
-.menu{
+.menu {
   display: flex;
   gap: 20px;
 }
-.menu-link{
-  padding: 10px 15px;
+.menu-link {
+  padding: 16px 0;
+  display: inline-block;
+  position: relative;
 }
 .menu-link::after {
   content: "";
@@ -20,8 +22,39 @@
   display: block;
   background-color: var(--cor-obrigatoria-3);
   margin-top: 5px;
+  position: absolute;
+  transition: 0.3s;
 }
-.menu-link:hover::after{
+.menu-link:hover::after {
   width: 100%;
-  transition: .3s;
+}
+.menu > li:last-child:before {
+  content: "";
+  display: block;
+  background: url("../../img/arrow-down-svgrepo-com.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: -20px;
+  top: 15px;
+}
+.menu li:last-child.ativo:before {
+  transform: rotate(180deg);
+}
+@media (max-width: 750px) {
+  .logo {
+    max-width: 100px;
+  }
+  .menu > li:last-child:before {
+    display: none;
+  }
+  .menu-link::after {
+    display: none;
+  }
+  .menu-link{
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--cor-obrigatoria-1);
+    margin-bottom: 10px;
+  }
 }

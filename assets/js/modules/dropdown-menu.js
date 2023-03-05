@@ -1,6 +1,6 @@
 export default function initDropdown() {
-  const abrir = document.querySelector("[data-dropdown='abrir']");
-  const eventos = ["click", "toustart"];
+  const btn = document.querySelector("[data-dropdown='abrir']");
+  const eventos = ["click", "touchstart"];
 
   function handleDropdown(event) {
     event.preventDefault();
@@ -9,5 +9,5 @@ export default function initDropdown() {
     menu.classList.toggle("ativo");
   }
 
-  eventos.forEach((evento) => abrir.addEventListener(evento, handleDropdown));
+  eventos.forEach(evento => btn.addEventListener(evento, handleDropdown));
 }

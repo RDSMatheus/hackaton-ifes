@@ -29,3 +29,8 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
+@media (max-width: 500px){
+  .grade-container{
+    grid-template-columns: 1fr;
+  }
+}
