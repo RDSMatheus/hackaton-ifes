@@ -28,6 +28,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+  background: var(--cor-5);
 }
 @media (max-width: 500px){
   .grade-container{

@@ -13,7 +13,7 @@
 .btn{
   display: flex;
   max-width: max-content;
-  background-color: #8E32FA;
+  background-color: var(--cor-5);
   color: var(--cor-0);
   padding: 5px 16px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
@@ -29,7 +29,7 @@
 .btn:hover{
   padding: 6px 18px;
   margin-bottom: 3px;
-  transition: .3s;
+  transition: .2s;
 }
 .titulo{
   font-size: 3rem;
