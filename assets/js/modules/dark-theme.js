@@ -3,12 +3,17 @@ import setPreference from "./modules/set-preference.js";
 export default function initDarkTheme() {
   const btnTheme = document.querySelector("[data-toggle-theme]");
   const body = document.body;
-  const darkMode =
-    JSON.parse(localStorage.getItem("dark-mode")).acessibilidade === "true";
-
-  if (darkMode) {
-    body.classList.add("dark-mode");
-    changeImg();
+  
+  try {
+    const darkMode =
+      JSON.parse(localStorage.getItem("dark-mode")).acessibilidade === "true";
+  
+    if (darkMode) {
+      body.classList.add("dark-mode");
+      changeImg();
+    }
+  } catch (error) {
+    console.log(Error(error))
   }
 
   function changeImg(valor) {
