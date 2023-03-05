@@ -5,7 +5,7 @@ export default function initScrollSuave(){
     event.preventDefault();
     const href = event.target.getAttribute("href");
     const scrollItem = document.querySelector(href)
-    const top = scrollItem.offsetTop - 70
+    const top = scrollItem.offsetTop - 100
     console.log(href)
     console.log(href, top)
     scroll({
