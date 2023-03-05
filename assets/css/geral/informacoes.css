@@ -1,21 +1,15 @@
-.informacoes-bg {
-  background: linear-gradient(
-    to bottom right,
-    var(--cor-obrigatoria-1) 20%,
-    var(--cor-obrigatoria-3)
-  );
-  padding-top: 60px;
-  padding-bottom: 60px;
-  box-shadow: inset 300px 0 0 var(--cor-1);
-}
-.informacoes img {
-  object-fit: cover;
-  object-position: center;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-}
 
-@media (max-width: 750px) {
-  .informacoes-bg {
-    box-shadow: inset 0 200px 0 var(--cor-1);
+.informacoes-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.informacoes .btn{
+  margin: 5px auto;
+}
+@media(max-width:750px){
+  .informacoes-wrapper{
+    flex-direction: column-reverse;
+    justify-content: center;
   }
 }

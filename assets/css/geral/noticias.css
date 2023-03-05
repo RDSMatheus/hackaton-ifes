@@ -21,7 +21,14 @@
 .galeria-item{
 	display: grid;
 	grid-template-columns: 200px 200px;
-	padding: 10px;
 	justify-content: start;
 	gap: 10px;
+}
+.galeria-item img{
+	object-fit: fill;
+}
+@media (max-width:600px){
+	.galeria-item{
+		grid-template-columns: 150px 200px;
+	}
 }
