@@ -16,17 +16,22 @@
 	scroll-snap-align: center;
 	border-radius: 3px;
 	font-size: 0;
-	margin-right: 15px;
+	margin-right: 0 15px;
 }
 
 .galeria-item{
 	display: grid;
-	grid-template-columns: 200px 200px;
+	grid-template-columns: 150px 250px;
 	justify-content: start;
 	gap: 10px;
 }
 .galeria-item img{
-	object-fit: fill;
+	object-fit: cover;
+}
+@media(min-width:1400px){
+	.galeria-item{
+		grid-template-columns: 300px 500px;
+	}
 }
 @media (max-width:600px){
 	.galeria-item{

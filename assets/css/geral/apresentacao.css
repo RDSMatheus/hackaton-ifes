@@ -6,7 +6,7 @@
   );
   padding-top: 60px;
   padding-bottom: 60px;
-  box-shadow: inset 300px 0 0 var(--cor-1);
+  box-shadow: inset 30vw 0 0 var(--cor-1);
 }
 .apresentacao img {
   object-fit: cover;

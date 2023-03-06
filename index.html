@@ -6,7 +6,10 @@
   <meta name="viewport"
     content="width=device-width">
   <title>replit</title>
-  <link href="./assets/css/style-min.css"
+  <link rel="preload"
+    href="style-min.css"
+    as="style">
+  <link href="./assets/css/style.css"
     rel="stylesheet"
     type="text/css" />
   <link rel="preconnect"
@@ -21,8 +24,10 @@
 <body>
   <header class="header-bg mb-1">
     <div class="header container">
-      <div class="logo"><img src="./assets/img/image2vector.svg"
-          alt="Logo"></div>
+      <div class="logo">
+        <img src="./assets/img/image2vector.svg"
+          alt="Logo">
+      </div>
       <nav aria-label="primaria">
         <button href="#"
           class="menu-mobile-btn"
@@ -57,7 +62,8 @@
 
   </header>
 
-  <main data-scroll-suave data-show="right"
+  <main data-scroll-suave
+    data-show="right"
     class="introducao-bg mb-2"
     id="introducao">
     <div class="container introducao cor-0">
@@ -69,11 +75,13 @@
         class="font-m mb-1 fadeInRight">Back-end e Front-end em apenas 8 meses, 100% EAD</p>
       <a data-anime="1500"
         href="https://cachoeiro.ifes.edu.br/processosseletivos/alunos/16788-edital-25-2022-processo-de-selecao-de-estudantes-para-o-curso-do-projeto-reprograme-se"
-        class="btn font-m-b fadeInUp" target="_blank">Inscreva-se</a>
+        class="btn font-m-b fadeInUp"
+        target="_blank">Inscreva-se</a>
     </div>
   </main>
 
-  <section data-scroll-suave data-show="left"
+  <section data-scroll-suave
+    data-show="left"
     class="apresentacao-bg mb-2 cor-0">
     <div class="apresentacao container grid-section">
       <div><img src="./assets/img/coding.jpeg"
@@ -83,12 +91,14 @@
         <p class="mb-1">Aprenda habilidades práticas em programação web com o Projeto Reprograme-se, uma iniciativa que oferece capacitação para qualquer pessoa interessada. Inscreva-se agora e comece a construir sua carreira na área de tecnologia.</p>
         <p class="mb-1">O Reprograme-se é um projeto que conta com toda experiência e competência do Ifes, uma instituição reconhecidamente de excelência na formação profissional, com a participação da Associação Capixaba de Tecnologia – ACT!ON. </p>
         <a href="https://cachoeiro.ifes.edu.br/processosseletivos/alunos/16788-edital-25-2022-processo-de-selecao-de-estudantes-para-o-curso-do-projeto-reprograme-se"
-          class="btn" target="_blank">Inscreva-se</a>
+          class="btn"
+          target="_blank">Inscreva-se</a>
       </div>
     </div>
   </section>
 
-  <section data-scroll-suave data-show="right"
+  <section data-scroll-suave
+    data-show="right"
     class="grade mb-2 container"
     id="grade">
     <h2 class="titulo cor-3 row">Grade</h2>
@@ -127,7 +137,8 @@
     </div>
   </section>
 
-  <section data-scroll-suave data-show="left"
+  <section data-scroll-suave
+    data-show="left"
     aria-label="Notícias"
     id="noticias"
     class="container mb-2 cor-3">
@@ -167,7 +178,8 @@
   </section>
 
 
-  <section data-scroll-suave data-show="right"
+  <section data-scroll-suave
+    data-show="right"
     aria-label="Faq"
     id="faq"
     class="container faq mb-2 cor-3">
@@ -186,7 +198,8 @@
     </dl>
   </section>
 
-  <article data-scroll-suave data-show="left"
+  <article data-scroll-suave
+    data-show="left"
     class="container mb-2 cor-3 informacoes"
     id="informacoes">
     <h2 class="titulo row">Informações</h2>
@@ -198,15 +211,17 @@
         <p class="font-m">Os estudos ocorrerão de forma online e, ainda, o aluno contará com o apoio e orientação de
           forma presencial no polo de apoio presencial de seu município.</p>
       </div>
-      <div><img src="./assets/img/informacao.png"
+      <div><img width="1400" height="1400" src="./assets/img/informacao.avif"
           alt=""></div>
 
     </div>
     <a href="https://cachoeiro.ifes.edu.br/processosseletivos/alunos/16788-edital-25-2022-processo-de-selecao-de-estudantes-para-o-curso-do-projeto-reprograme-se"
-      class="btn" target="_blank">Inscreva-se</a>
+      class="btn"
+      target="_blank">Inscreva-se</a>
   </article>
 
-  <section data-scroll-suave data-show="right"
+  <section data-scroll-suave
+    data-show="right"
     aria-label="Calendário"
     id="calendario"
     class="calendario-bg mb-2">
@@ -233,7 +248,8 @@
     </div>
   </section>
 
-  <section data-scroll-suave data-show="left"
+  <section data-scroll-suave
+    data-show="left"
     aria-label="Depoimentos"
     id="depoimentos"
     class="container mb-2 cor-3 depoimentos">
@@ -241,13 +257,13 @@
     <div class="depoimentos-wrap">
 
       <div class="depoimentos-item">
-        <div><img src="./assets/img/mario-pfp.jpg"
+        <div><img src="./assets/img/mario-pfp.avif"
             alt="Mario profile pic"></div>
         <p class="mb-1 depoimento-titulo">Super Mario</p>
         <p>"Mamma mia, pessoal! Participei do projeto Reprograme-se e agora sou um verdadeiro herói. Aprendi HTML, CSS e JavaScript para criar sites incríveis para a princesa Peach. Os professores foram incríveis e tornaram o aprendizado fácil e divertido. Recomendo fortemente este curso para quem deseja se tornar um desenvolvedor front-end!"</p>
       </div>
       <div class="depoimentos-item">
-        <div><img src="./assets/img/spiderman-pfp.jpg"></div>
+        <div><img src="./assets/img/spiderman-pfp.webp"></div>
         <p class="mb-1 depoimento-titulo">Homem Aranha</p>
         <p>"Como o Homem-Aranha, eu precisei aprimorar minhas habilidades em desenvolvimento web. Graças ao projeto Reprograme-se aprendi HTML, CSS, JavaScript e muito mais. Os professores foram ótimos e agora posso criar um site incrível para o meu alter-ego, Peter Parker. Se você quer aprender a criar sites incríveis, recomendo este curso com grandes responsabilidades!"</p>
       </div>
@@ -260,7 +276,8 @@
     </div>
   </section>
 
-  <section class="contato-bg " data-show="right"
+  <section class="contato-bg "
+    data-show="right"
     id="contato">
     <div class="contato container">
       <h2 class="titulo cor-0">Contato</h2>
@@ -294,7 +311,8 @@
   </section>
 
 
-  <footer class="footer-bg" data-show="left"> 
+  <footer class="footer-bg"
+    data-show="left">
     <div class="footer container cor-3">
       <h2 class="titulo row">Realização</h2>
       <div class="img">
