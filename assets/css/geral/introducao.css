@@ -1,6 +1,7 @@
 .introducao-bg {
-  background-image: url("../../bg-introducao.webp");
+  background-image: url("../../bg-introducao.jpg");
   padding: 120px;
+  background-size: cover;
   text-align: center;
   background-position: top;
   background-repeat: no-repeat;
@@ -25,8 +26,8 @@ h1.titulo::before {
   bottom: -10px;
   left: calc(50% - 50px);
 }
-@media (max-width: 750px){
-  .introducao-bg{
-    padding: 120px 60px
+@media (max-width: 750px) {
+  .introducao-bg {
+    padding: 120px 60px;
   }
 }

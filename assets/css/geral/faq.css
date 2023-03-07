@@ -12,8 +12,9 @@
 }
 .btn-faq::after {
   content: url("../../img/arrow-down-svgrepo-com.svg");
+  transition: .3s;
 }
-.ativo button::after {
+[data-accordion].ativo .btn-faq::after {
   rotate: 180deg;
   transition: 0.3s;
 }

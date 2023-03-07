@@ -34,19 +34,7 @@
 .menu-link:hover::after {
   width: 100%;
 }
-.menu > li:last-child:before {
-  content: "";
-  display: block;
-  background: url("../../img/arrow-down-svgrepo-com.svg") no-repeat;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  right: -20px;
-  top: 15px;
-}
-.menu li:last-child.ativo:before {
-  transform: rotate(180deg);
-}
+
 @media (max-width: 750px) {
   .logo {
     max-width: 100px;
