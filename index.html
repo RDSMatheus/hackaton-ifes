@@ -9,16 +9,18 @@
     content="Página feita para o projeto reprograme-se" />
   <title>replit</title>
   <link rel="preload"
-    href="style.min.css"
+    href="./assets/css/style.min.css"
     as="style">
   <link href="./assets/css/style.min.css"
     rel="stylesheet"
     type="text/css" />
+  
   <link rel="preconnect"
     href="https://fonts.googleapis.com">
   <link rel="preconnect"
     href="https://fonts.gstatic.com"
     crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" as="font">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
 </head>
@@ -27,13 +29,13 @@
   <header class="header-bg mb-1">
     <div class="header container">
       <div class="logo">
-        <img src="./assets/img/image2vector.svg"
+        <img width="150" height="100" src="./assets/img/image2vector.svg"
           alt="Logo">
       </div>
       <nav aria-label="primaria">
-        <button href="#"
+        <button href="#" aria-label="Botão menu mobile"
           class="menu-mobile-btn"
-          data-menu="abrir"><img src="./assets/img/hamburger-menu-mobile-svgrepo-com.svg"
+          data-menu="abrir"><img width="40" height="40" src="./assets/img/hamburger-menu-mobile-svgrepo-com.svg"
             alt=""></button>
         <ul class="menu cor-3">
           <li><a href="#introducao"
@@ -45,8 +47,8 @@
               class="menu-link">Calendario</a></li>
           <li><a href="#depoimentos"
               class="menu-link">Depoimentos</a></li>
-          <li><a data-dropdown="abrir"
-              href=""
+          <li data-dropdown="abrir">
+            <a href="#"
               class="menu-link">Mais</a>
             <ul class="dropdown-menu">
               <li>
@@ -59,6 +61,7 @@
                 <a href="#informacoes">Informações</a>
               </li>
             </ul>
+          </li>
         </ul>
       </nav>
     </div>
@@ -87,7 +90,7 @@
     data-show="left"
     class="apresentacao-bg mb-2 cor-0">
     <div class="apresentacao container grid-section">
-      <div><img src="./assets/img/coding.jpeg"
+      <div><img width="800" height="430" src="./assets/img/coding.webp"
           alt="Imagem com códigos de programação"></div>
       <div>
         <h2 class="titulo mb-1">Capacite-se em programação web com o Projeto Reprograme-se</h2>
@@ -149,7 +152,7 @@
     <ul class="galeria">
       <li class="galeria-item">
         <div>
-          <img src="./assets/img/image-retro-pcs.jpg"
+          <img width="200" height="254" src="./assets/img/image-retro-pcs.jpg"
             alt="PC retro">
         </div>
         <div>
@@ -159,7 +162,7 @@
       </li>
       <li class="galeria-item">
         <div>
-          <img src="./assets/img/image-top-laptops.jpg"
+          <img width="200" height="254" src="./assets/img/image-top-laptops.jpg"
             alt="Laptop">
         </div>
         <div>
@@ -169,7 +172,7 @@
       </li>
       <li class="galeria-item">
         <div>
-          <img src="./assets/img/image-gaming-growth.jpg"
+          <img width="200" height="254" src="./assets/img/image-gaming-growth.jpg"
             alt="Joystick">
         </div>
         <div>
@@ -231,23 +234,23 @@
     id="calendario"
     class="calendario-bg mb-2">
     <h2 class="titulo cor-0">Calendário</h2>
-    <div class="calendario">
+    <div class="calendario container">
       <div class="calendario-item">
         <span class="status">teste</span>
         <p class="mb-2">Periodo de inscrição</p>
-        <p class="data"><span><img src="./assets/img/date-range-svgrepo-com.svg"
+        <p class="data"><span><img width="20" height="20" src="./assets/img/date-range-svgrepo-com.svg"
               alt=""></span>05 de Março a 08 de Março</p>
       </div>
       <div class="calendario-item">
         <span class="status">teste</span>
         <p class="mb-2">Recurso</p>
-        <p class="data"><span><img src="./assets/img/date-range-svgrepo-com.svg"
+        <p class="data"><span><img width="20" height="20" src="./assets/img/date-range-svgrepo-com.svg"
               alt=""></span>15 de Março a 18 de Março</p>
       </div>
       <div class="calendario-item">
         <span class="status">teste</span>
         <p class="mb-2">Período de Matrícula</p>
-        <p class="data"><span><img src="./assets/img/date-range-svgrepo-com.svg"
+        <p class="data"><span><img width="20" height="20" src="./assets/img/date-range-svgrepo-com.svg"
               alt=""></span>25 de Março a 28 de Março</p>
       </div>
     </div>
@@ -327,10 +330,10 @@
     <div class="footer container cor-3">
       <h2 class="titulo row">Realização</h2>
       <div class="img">
-        <div><img id="ifes"
+        <div><img id="ifes" width="200" height="100"
             src="./assets/img/logo-ifes/ifes-horizontal-pb.png"
             alt="Logo IFES"></div>
-        <div><img id="action"
+        <div><img width="200" height="100" id="action"
             src="./assets/img/logo-action/horizontal-positiva.png"
             alt="Logo ACT!ON"></div>
       </div>
@@ -347,13 +350,13 @@
 
 
   <button data-toggle-theme aria-label="Botão que ~muda o tema de claro para escuro"
-    class="mudar-tema"><img src="./assets/img/dark-mode-night-moon-svgrepo-com.svg"
+    class="mudar-tema"><img width="20" height="20" src="./assets/img/dark-mode-night-moon-svgrepo-com.svg"
       alt=""></button>
   <button data-toggle-fonte aria-label="Botão que aumenta a fonte"
-    class="mudar-fonte"><img src="./assets/img/font-increase-svgrepo-com.svg"
+    class="mudar-fonte"><img width="20" height="20" src="./assets/img/font-increase-svgrepo-com.svg"
       alt=""></button>
   <button data-toggle-fonte-decrease aria-label="Botão que diminui a fonte"
-    class="mudar-fonte-diminuir"><img src="./assets/img/font-decrease-svgrepo-com.svg"
+    class="mudar-fonte-diminuir"><img width="20" height="20" src="./assets/img/font-decrease-svgrepo-com.svg"
       alt=""></button>
   <script src="./assets/js/plugins/simple-anime.js"></script>
   <script type="module"
